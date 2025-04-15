@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\courseapp\\courses\\data\\migrations\\20250326172347_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|solutionrelative:courses\\data\\migrations\\20250326172347_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A710CB1D-8F60-44B7-A189-2E7BB6F4375C}|CoursesDomain\\Courses.Domain.csproj|c:\\users\\elence\\desktop\\is\\courseapp\\coursesdomain\\identity models\\coursesapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A710CB1D-8F60-44B7-A189-2E7BB6F4375C}|CoursesDomain\\Courses.Domain.csproj|solutionrelative:coursesdomain\\identity models\\coursesapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\courseapp\\courses\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|solutionrelative:courses\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A710CB1D-8F60-44B7-A189-2E7BB6F4375C}|CoursesDomain\\Courses.Domain.csproj|c:\\users\\elence\\desktop\\is\\courseapp\\coursesdomain\\courses.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A710CB1D-8F60-44B7-A189-2E7BB6F4375C}|CoursesDomain\\Courses.Domain.csproj|solutionrelative:coursesdomain\\courses.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\courseapp\\courses\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|solutionrelative:courses\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\courseapp\\courses\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{226573BE-939E-4AEE-BA6C-DFEB79E8632A}|Courses\\Courses.Web.csproj|solutionrelative:courses\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250326172347_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Data\\Migrations\\20250326172347_Initial.cs",
+              "RelativeDocumentMoniker": "Courses\\Data\\Migrations\\20250326172347_Initial.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Data\\Migrations\\20250326172347_Initial.cs",
+              "RelativeToolTip": "Courses\\Data\\Migrations\\20250326172347_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T17:23:47.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Courses.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\CoursesDomain\\Courses.Domain.csproj",
+              "RelativeDocumentMoniker": "CoursesDomain\\Courses.Domain.csproj",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\CoursesDomain\\Courses.Domain.csproj",
+              "RelativeToolTip": "CoursesDomain\\Courses.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T15:44:48.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Program.cs",
+              "RelativeDocumentMoniker": "Courses\\Program.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Program.cs",
+              "RelativeToolTip": "Courses\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:12:15.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Courses\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Courses\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:14:14.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CoursesApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\CoursesDomain\\Identity Models\\CoursesApplicationUser.cs",
+              "RelativeDocumentMoniker": "CoursesDomain\\Identity Models\\CoursesApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\CoursesDomain\\Identity Models\\CoursesApplicationUser.cs",
+              "RelativeToolTip": "CoursesDomain\\Identity Models\\CoursesApplicationUser.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:06:39.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Courses\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CourseApp\\Courses\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Courses\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T16:16:35.16Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

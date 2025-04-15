@@ -1,0 +1,9 @@
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.csproj.AssemblyReference.cache
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.AssemblyInfoInputs.cache
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.AssemblyInfo.cs
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.csproj.CoreCompileInputs.cache
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.RazorAssemblyInfo.cache
+C:\Users\Elence\Desktop\IS\ShopApplication\EShop\EShop.Web\obj\Debug\net8.0\EShop.Web.RazorAssemblyInfo.cs

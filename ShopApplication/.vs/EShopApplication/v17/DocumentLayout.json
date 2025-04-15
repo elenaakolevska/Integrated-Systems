@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\Migrations\\20250320192159_SecondMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EShop\\EShop.Web\\Data\\Migrations\\20250320192159_SecondMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\models\\domain\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\models\\domain\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\models\\domain\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\models\\domain\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\models\\domain\\productinshoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\models\\domain\\productinshoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\models\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\models\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ShopDb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\Migrations\\20250320174456_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EShop\\EShop.Web\\Data\\Migrations\\20250320174456_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|c:\\users\\elence\\desktop\\is\\shopapplication\\eshop\\eshop.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA38695-78C4-478E-B2F3-30D923C9F790}|EShop\\EShop.Web\\EShop.Web.csproj|solutionrelative:eshop\\eshop.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250320192159_SecondMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\Migrations\\20250320192159_SecondMigration.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Data\\Migrations\\20250320192159_SecondMigration.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\Migrations\\20250320192159_SecondMigration.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Data\\Migrations\\20250320192159_SecondMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T19:22:00.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Models\\Domain\\ShoppingCart.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\ShoppingCart.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Models\\Domain\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T19:06:03.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAQwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T19:01:40.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EShopApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\EShopApplicationUser.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Models\\Domain\\EShopApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\EShopApplicationUser.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Models\\Domain\\EShopApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T18:54:09.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductInShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\ProductInShoppingCart.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Models\\Domain\\ProductInShoppingCart.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\ProductInShoppingCart.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Models\\Domain\\ProductInShoppingCart.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T19:06:54.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\Product.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Models\\Domain\\Product.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Models\\Domain\\Product.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Models\\Domain\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T19:04:41.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Program.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Program.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T18:59:46.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ShopDb/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-20T18:14:56.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250320174456_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\Migrations\\20250320174456_Initial.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Data\\Migrations\\20250320174456_Initial.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Data\\Migrations\\20250320174456_Initial.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Data\\Migrations\\20250320174456_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:44:56.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\appsettings.json",
+              "RelativeToolTip": "EShop\\EShop.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-20T17:40:22.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EShop\\EShop.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\ShopApplication\\EShop\\EShop.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EShop\\EShop.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:15:05.531Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
