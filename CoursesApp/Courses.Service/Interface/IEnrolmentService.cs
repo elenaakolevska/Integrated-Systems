@@ -7,11 +7,11 @@ using Courses.Domain.DomainModels;
 
 namespace Courses.Service.Interface
 {
-    public interface IEnrollmentService
+    public interface IEnrolmentService
     {
         List<Enrolment> GetAll();
         Enrolment? GetById(Guid id);
-        Enrolment Insert(Enrolment enrollment);
+        Enrolment Insert(Enrolment enrolment);
         Enrolment Update(Enrolment enrolment);
         Enrolment DeleteById(Guid id);
     }

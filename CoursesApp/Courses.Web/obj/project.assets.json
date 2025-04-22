@@ -3195,6 +3195,20 @@
         "runtime": {
           "bin/placeholder/Courses.Repository.dll": {}
         }
+      },
+      "Courses.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Courses.Domain": "1.0.0",
+          "Courses.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Courses.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Courses.Service.dll": {}
+        }
       }
     }
   },
@@ -8646,12 +8660,18 @@
       "type": "project",
       "path": "../Courses.Repository/Courses.Repository.csproj",
       "msbuildProject": "../Courses.Repository/Courses.Repository.csproj"
+    },
+    "Courses.Service/1.0.0": {
+      "type": "project",
+      "path": "../Courses.Service/Courses.Service.csproj",
+      "msbuildProject": "../Courses.Service/Courses.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Courses.Domain >= 1.0.0",
       "Courses.Repository >= 1.0.0",
+      "Courses.Service >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.11",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.11",
@@ -8693,6 +8713,9 @@
             },
             "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Repository\\Courses.Repository.csproj": {
               "projectPath": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Repository\\Courses.Repository.csproj"
+            },
+            "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Courses.Service.csproj": {
+              "projectPath": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Courses.Service.csproj"
             }
           }
         }

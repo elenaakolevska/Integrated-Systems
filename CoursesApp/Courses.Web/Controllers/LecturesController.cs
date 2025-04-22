@@ -7,34 +7,31 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Courses.Domain.DomainModels;
 using Courses.Web.Data;
+using Courses.Service.Interface;
 
 namespace Courses.Web.Controllers
 {
     public class LecturesController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ILectureService _lectureService;
 
-        public LecturesController(ApplicationDbContext context)
+        public LecturesController(ILectureService lecturesService)
         {
-            _context = context;
+            _lectureService = lecturesService;
         }
 
         // GET: Lectures
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Lectures.ToListAsync());
+            return View(_lectureService.GetAll());
         }
 
-        // GET: Lectures/Details/5
-        public async Task<IActionResult> Details(Guid? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var lecture = await _context.Lectures
-                .FirstOrDefaultAsync(m => m.Id == id);
+        // GET: Lectures/Details/5
+        public IActionResult Details(Guid id)
+        {
+            var lecture = _lectureService.GetById(id);
+
             if (lecture == null)
             {
                 return NotFound();
@@ -54,26 +51,20 @@ namespace Courses.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,LectureName,Date,CourseId")] Lecture lecture)
+        public IActionResult Create([Bind("Id,LectureName,Date,CourseId")] Lecture lecture)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(lecture);
-                await _context.SaveChangesAsync();
+                _lectureService.Insert(lecture);
                 return RedirectToAction(nameof(Index));
             }
             return View(lecture);
         }
 
         // GET: Lectures/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
+        public IActionResult Edit(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var lecture = await _context.Lectures.FindAsync(id);
+            var lecture = _lectureService.GetById(id);
             if (lecture == null)
             {
                 return NotFound();
@@ -86,46 +77,23 @@ namespace Courses.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid? id, [Bind("Id,LectureName,Date,CourseId")] Lecture lecture)
+        public IActionResult Edit(Guid? id, [Bind("Id,LectureName,Date,CourseId")] Lecture lecture)
         {
             if (id != lecture.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(lecture);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!LectureExists(lecture.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(lecture);
+            _lectureService.Update(lecture);
+
+
+            return RedirectToAction(nameof(Index));
         }
-
         // GET: Lectures/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
+        public IActionResult Delete(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var lecture = _lectureService.GetById(id);
 
-            var lecture = await _context.Lectures
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (lecture == null)
             {
                 return NotFound();
@@ -137,21 +105,10 @@ namespace Courses.Web.Controllers
         // POST: Lectures/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid? id)
+        public IActionResult DeleteConfirmed(Guid id)
         {
-            var lecture = await _context.Lectures.FindAsync(id);
-            if (lecture != null)
-            {
-                _context.Lectures.Remove(lecture);
-            }
-
-            await _context.SaveChangesAsync();
+            _lectureService.DeleteById(id);
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool LectureExists(Guid? id)
-        {
-            return _context.Lectures.Any(e => e.Id == id);
         }
     }
 }

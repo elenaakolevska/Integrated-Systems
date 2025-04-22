@@ -1,7 +1,9 @@
 using Courses.Domain.IdentityModels;
 using Courses.Repository;
-using Courses.Web.Data;
-using Microsoft.AspNetCore.Identity;
+using Courses.Repository.Implementation;
+using Courses.Repository.Interface;
+using Courses.Service.Implementation;
+using Courses.Service.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,17 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<CoursesApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddTransient<ICourseService, CourseService>();
+builder.Services.AddTransient<IStudentService, StudentService>();
+builder.Services.AddTransient<IEnrolmentService, EnrolmentService>();
+builder.Services.AddTransient<ILectureService, LectureService>();
+
+
+
 
 var app = builder.Build();
 

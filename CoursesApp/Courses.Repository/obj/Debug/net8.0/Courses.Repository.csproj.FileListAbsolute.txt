@@ -1,0 +1,16 @@
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.csproj.AssemblyReference.cache
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.AssemblyInfoInputs.cache
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.AssemblyInfo.cs
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.sourcelink.json
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\bin\Debug\net8.0\Courses.Repository.deps.json
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\bin\Debug\net8.0\Courses.Repository.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\bin\Debug\net8.0\Courses.Repository.pdb
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\bin\Debug\net8.0\Courses.Domain.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\bin\Debug\net8.0\Courses.Domain.pdb
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses..F895B486.Up2Date
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\refint\Courses.Repository.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\Courses.Repository.pdb
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Repository\obj\Debug\net8.0\ref\Courses.Repository.dll

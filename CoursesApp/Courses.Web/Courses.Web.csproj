@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Courses.Domain\Courses.Domain.csproj" />
     <ProjectReference Include="..\Courses.Repository\Courses.Repository.csproj" />
+    <ProjectReference Include="..\Courses.Service\Courses.Service.csproj" />
   </ItemGroup>
 
 </Project>

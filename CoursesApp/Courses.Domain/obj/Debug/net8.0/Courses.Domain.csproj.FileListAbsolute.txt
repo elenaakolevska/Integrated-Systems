@@ -10,3 +10,4 @@ C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Domain\obj\Debug\net8.0\Courses.Do
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Domain\obj\Debug\net8.0\refint\Courses.Domain.dll
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Domain\obj\Debug\net8.0\Courses.Domain.pdb
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Domain\obj\Debug\net8.0\ref\Courses.Domain.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Domain\obj\Debug\net8.0\Courses.Domain.sourcelink.json

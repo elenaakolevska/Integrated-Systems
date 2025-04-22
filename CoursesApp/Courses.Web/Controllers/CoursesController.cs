@@ -7,35 +7,33 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Courses.Domain.DomainModels;
 using Courses.Repository;
+using Courses.Service.Interface;
 
 
 namespace Courses.Web.Controllers
 {
     public class CoursesController : Controller
     {
-        private readonly ApplicationDbContext _context;
 
-        public CoursesController(ApplicationDbContext context)
+        private readonly ICourseService _courseService;
+
+        public CoursesController(ICourseService courseService)
         {
-            _context = context;
+            _courseService = courseService;
         }
 
+
         // GET: Courses
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Courses.ToListAsync());
+            return View(_courseService.GetAll());
         }
 
         // GET: Courses/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public IActionResult Details(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var course = _courseService.GetById(id);
 
-            var course = await _context.Courses
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (course == null)
             {
                 return NotFound();
@@ -55,26 +53,20 @@ namespace Courses.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CourseName,Semester")] Course course)
+        public IActionResult Create([Bind("Id,CourseName,Semester")] Course course)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(course);
-                await _context.SaveChangesAsync();
+                _courseService.Insert(course);
                 return RedirectToAction(nameof(Index));
             }
             return View(course);
         }
 
         // GET: Courses/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
+        public IActionResult Edit(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var course = await _context.Courses.FindAsync(id);
+            var course = _courseService.GetById(id);
             if (course == null)
             {
                 return NotFound();
@@ -87,46 +79,24 @@ namespace Courses.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid? id, [Bind("Id,CourseName,Semester")] Course course)
+        public IActionResult Edit(Guid? id, [Bind("Id,CourseName,Semester")] Course course)
         {
             if (id != course.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(course);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CourseExists(course.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(course);
+            _courseService.Update(course);
+
+
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Courses/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
+        public IActionResult Delete(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var course = _courseService.GetById(id);
 
-            var course = await _context.Courses
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (course == null)
             {
                 return NotFound();
@@ -138,21 +108,21 @@ namespace Courses.Web.Controllers
         // POST: Courses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid? id)
+        public IActionResult DeleteConfirmed(Guid id)
         {
-            var course = await _context.Courses.FindAsync(id);
-            if (course != null)
-            {
-                _context.Courses.Remove(course);
-            }
+            _courseService.DeleteById(id);
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CourseExists(Guid? id)
+        private bool CourseExists(Guid id)
         {
-            return _context.Courses.Any(e => e.Id == id);
+            var course = _courseService.GetById(id);
+            if (course == null)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

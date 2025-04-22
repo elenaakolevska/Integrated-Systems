@@ -7,34 +7,30 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Courses.Domain.DomainModels;
 using Courses.Web.Data;
+using Courses.Service.Interface;
 
 namespace Courses.Web.Controllers
 {
     public class StudentsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IStudentService _studentService;
 
-        public StudentsController(ApplicationDbContext context)
+        public StudentsController(IStudentService studentService)
         {
-            _context = context;
+            _studentService = studentService;
         }
 
         // GET: Students
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Students.ToListAsync());
+            return View(_studentService.GetAll());
         }
 
         // GET: Students/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public IActionResult Details(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var student = await _context.Students
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var student = _studentService.GetById(id);
             if (student == null)
             {
                 return NotFound();
@@ -54,26 +50,20 @@ namespace Courses.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Surname,DateOfBirth,Index,EnrollmentYear")] Student student)
+        public IActionResult Create([Bind("Id,Name,Surname,DateOfBirth,Index,EnrollmentYear")] Student student)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(student);
-                await _context.SaveChangesAsync();
+                _studentService.Insert(student);
                 return RedirectToAction(nameof(Index));
             }
             return View(student);
         }
 
         // GET: Students/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
+        public IActionResult Edit(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var student = await _context.Students.FindAsync(id);
+            var student = _studentService.GetById(id);
             if (student == null)
             {
                 return NotFound();
@@ -86,46 +76,21 @@ namespace Courses.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid? id, [Bind("Id,Name,Surname,DateOfBirth,Index,EnrollmentYear")] Student student)
+        public IActionResult Edit(Guid id, [Bind("Id,Name,Surname,DateOfBirth,Index,EnrollmentYear")] Student student)
         {
             if (id != student.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(student);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!StudentExists(student.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(student);
+            _studentService.Update(student);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Students/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
+        public IActionResult Delete(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var student = await _context.Students
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var student = _studentService.GetById(id);
             if (student == null)
             {
                 return NotFound();
@@ -137,21 +102,20 @@ namespace Courses.Web.Controllers
         // POST: Students/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid? id)
+        public IActionResult DeleteConfirmed(Guid id)
         {
-            var student = await _context.Students.FindAsync(id);
-            if (student != null)
-            {
-                _context.Students.Remove(student);
-            }
-
-            await _context.SaveChangesAsync();
+            _studentService.DeleteById(id);
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StudentExists(Guid? id)
+        private bool StudentExists(Guid id)
         {
-            return _context.Students.Any(e => e.Id == id);
+            var student = _studentService.GetById(id);
+            if (student == null)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
