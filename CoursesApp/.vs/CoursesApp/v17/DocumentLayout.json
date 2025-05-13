@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.service\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|solutionrelative:courses.service\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45A0DFEC-8292-491F-B90E-9D8B972B671B}|Courses.Repository\\Courses.Repository.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45A0DFEC-8292-491F-B90E-9D8B972B671B}|Courses.Repository\\Courses.Repository.csproj|solutionrelative:courses.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.service\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|solutionrelative:courses.service\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45A0DFEC-8292-491F-B90E-9D8B972B671B}|Courses.Repository\\Courses.Repository.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CourseService.cs",
               "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Implementation\\CourseService.cs",
               "RelativeDocumentMoniker": "Courses.Service\\Implementation\\CourseService.cs",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Repository\\Interface\\IRepository.cs",
               "RelativeDocumentMoniker": "Courses.Repository\\Interface\\IRepository.cs",
@@ -100,8 +100,7 @@
               "RelativeToolTip": "Courses.Repository\\Implementation\\Repository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:01:35.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:01:35.073Z"
             },
             {
               "$type": "Document",
@@ -113,8 +112,7 @@
               "RelativeToolTip": "Courses.Domain\\DomainModels\\BaseEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:01:17.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:01:17.494Z"
             },
             {
               "$type": "Document",
@@ -198,8 +196,7 @@
               "RelativeToolTip": "Courses.Web\\Views\\Courses\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T13:20:56.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T13:20:56.477Z"
             },
             {
               "$type": "Bookmark",
