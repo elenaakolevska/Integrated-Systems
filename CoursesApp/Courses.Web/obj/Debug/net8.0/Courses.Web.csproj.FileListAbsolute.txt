@@ -298,3 +298,4 @@ C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Repos
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Service.dll
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Repository.pdb
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Service.pdb
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\obj\Debug\net8.0\Courses.Web.MvcApplicationPartsAssemblyInfo.cs

@@ -35,6 +35,14 @@ namespace Courses.Service.Implementation
             return _enrolmentRepository.GetAll(selector: x => x).ToList();
         }
 
+        public List<Enrolment> GetAllForUser(string userId)
+        {
+            return _enrolmentRepository.GetAll(
+                  selector: x => x,
+                  predicate: x => x.CreatedById == userId
+              ).ToList();
+        }
+
         public Enrolment? GetById(Guid id)
         {
             return _enrolmentRepository.Get(selector: x => x,
@@ -52,5 +60,7 @@ namespace Courses.Service.Implementation
         {
             return _enrolmentRepository.Update(enrolment);
         }
+
+       
     }
 }

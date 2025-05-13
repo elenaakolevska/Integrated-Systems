@@ -6,27 +6,50 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Courses.Domain.DomainModels;
-using Courses.Web.Data;
 using Courses.Service.Interface;
 using Courses.Service.Implementation;
+using Microsoft.AspNetCore.Identity;
+using Courses.Domain.IdentityModels;
+using System.Security.Claims;
+using Courses.Repository.Interface;
+
 
 namespace Courses.Web.Controllers
 {
     public class EnrolmentsController : Controller
     {
         private readonly IEnrolmentService _enrolmentService;
+        private readonly IStudentService _studentService;
+        private readonly ICourseService _courseService;
+        private readonly UserManager<CoursesApplicationUser> _userManager;
 
-        public EnrolmentsController(IEnrolmentService _enrolmentService)
+		private readonly IRepository<TransferRequest> _transferRequestRepo;
+		private readonly IRepository<CourseTransfer> _courseTransferRepo;
+
+
+		public EnrolmentsController(
+	            IEnrolmentService enrolmentService, IStudentService studentService,
+                ICourseService courseService,
+                UserManager<CoursesApplicationUser> userManager,
+	            IRepository<TransferRequest> transferRequestRepo,
+	            IRepository<CourseTransfer> courseTransferRepo)
+		{
+			_enrolmentService = enrolmentService;
+            _studentService = studentService;
+            _courseService = courseService;
+			_userManager = userManager;
+			_transferRequestRepo = transferRequestRepo;
+			_courseTransferRepo = courseTransferRepo;
+		}
+
+
+
+		// GET: Enrolments
+		public IActionResult Index()
         {
-            this._enrolmentService = _enrolmentService;
-        }
-
-
-
-        // GET: Enrolments
-        public IActionResult Index()
-        {
-            return View(_enrolmentService.GetAll());
+            var userId = _userManager.GetUserId(User);
+            var enrolments = _enrolmentService.GetAllForUser(userId);
+            return View(enrolments);
         }
 
         // GET: Enrolments/Details/5
@@ -43,10 +66,21 @@ namespace Courses.Web.Controllers
         }
 
         // GET: Enrolments/Create
+        // GET: Enrolments/Create
+        // GET: Enrolments/Create
         public IActionResult Create()
         {
+            var students = _studentService.GetAll();  // Ова треба да врати колекција на студенти
+            var courses = _courseService.GetAll();   // Ова треба да врати колекција на курсеви
+
+            // Пренесувате податоци во ViewBag како SelectList
+            ViewBag.Students = new SelectList(students, "Id", "Name");
+            ViewBag.Courses = new SelectList(courses, "Id", "CourseName");
+
             return View();
         }
+
+
 
         // POST: Enrolments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -57,9 +91,15 @@ namespace Courses.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                enrolment.CreatedById = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 _enrolmentService.Insert(enrolment);
                 return RedirectToAction(nameof(Index));
             }
+            var students = _studentService.GetAll();
+            var courses = _courseService.GetAll();
+            ViewBag.Students = new SelectList(students, "Id", "Name");
+            ViewBag.Courses = new SelectList(courses, "Id", "CourseName");
+
             return View(enrolment);
         }
 
@@ -90,20 +130,20 @@ namespace Courses.Web.Controllers
 
 
             return RedirectToAction(nameof(Index));
-     
+
         }
 
         // GET: Enrolments/Delete/5
         public IActionResult Delete(Guid id)
         {
-            var course = _enrolmentService.GetById(id);
+            var enrolment = _enrolmentService.GetById(id);
 
-            if (course == null)
+            if (enrolment == null)
             {
                 return NotFound();
             }
 
-            return View(course);
+            return View(enrolment);
         }
 
         // POST: Enrolments/Delete/5
@@ -125,5 +165,68 @@ namespace Courses.Web.Controllers
             }
             return true;
         }
-    }
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Transfer()
+		{
+			var userId = _userManager.GetUserId(User);
+			var enrolments = _enrolmentService.GetAllForUser(userId);
+
+			if (enrolments == null || !enrolments.Any())
+			{
+				TempData["Message"] = "Нема енролменти за трансфер.";
+				return RedirectToAction(nameof(Index));
+			}
+
+			var transferRequest = new TransferRequest
+			{
+				CreatedById = userId,
+				DateCreated = DateTime.Now,
+			};
+
+			_transferRequestRepo.Insert(transferRequest);
+
+			foreach (var enrolment in enrolments)
+			{
+				var transfer = new CourseTransfer
+				{
+					EnrolmendId = enrolment.Id,
+					Enrolment = enrolment,
+					TransferRequestId = transferRequest.Id,
+					TransferRequest = transferRequest
+				};
+
+				_courseTransferRepo.Insert(transfer);
+				_enrolmentService.DeleteById(enrolment.Id);
+			}
+
+			return RedirectToAction("TransferDetails", new { id = transferRequest.Id });
+		}
+
+		public IActionResult TransferDetails(Guid id)
+		{
+            var transferRequest = _transferRequestRepo.Get(
+    selector: tr => tr,
+    predicate: tr => tr.Id == id,
+    include: source => source
+        .Include(tr => tr.CourseTransfers)
+        .ThenInclude(ct => ct.Enrolment)
+            .ThenInclude(e => e.Student)
+        .Include(tr => tr.CourseTransfers)
+        .ThenInclude(ct => ct.Enrolment)
+            .ThenInclude(e => e.Course)
+);
+
+
+
+            if (transferRequest == null)
+			            {
+				            return NotFound();
+			            }
+
+			return View(transferRequest);
+		}
+
+
+	}
 }

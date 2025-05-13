@@ -1,0 +1,28 @@
+﻿@model Courses.Domain.DomainModels.TransferRequest
+
+@{
+    ViewData["Title"] = "Transfer Details";
+}
+
+<h2>Details For Transfer</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name and Surname of Student</th>
+            <th>Date of enrollment</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transfer in Model.CourseTransfers)
+        {
+            <tr>
+                <td>@transfer.Enrolment?.Student?.Name</td>
+                <td>@transfer.Enrolment?.DateEnroled.ToShortDateString()</td>
+                <td>@transfer.Enrolment?.Course?.CourseName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>Total number of transferred students: @Model.CourseTransfers.Count</p>

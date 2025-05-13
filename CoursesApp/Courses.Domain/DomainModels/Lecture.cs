@@ -12,7 +12,7 @@ namespace Courses.Domain.DomainModels
 		
 		public string? LectureName { get; set; }
 		public DateTime Date { get; set; }
-		public int CourseId { get; set; }
+		public Guid CourseId { get; set; }
 		public Course Course { get; set; }
 	}
 }

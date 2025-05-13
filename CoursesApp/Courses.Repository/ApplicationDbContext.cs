@@ -16,5 +16,8 @@ namespace Courses.Repository
         public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Enrolment> Enrolments { get; set; }
         public virtual DbSet<Lecture> Lectures { get; set;}
+        public virtual DbSet<TransferRequest> TransferRequests { get; set; }
+        public virtual DbSet<CourseTransfer> CourseTransfers { get; set; }
+
     }
 }

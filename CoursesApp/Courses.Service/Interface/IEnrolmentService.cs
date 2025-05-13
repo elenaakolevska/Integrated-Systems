@@ -14,5 +14,7 @@ namespace Courses.Service.Interface
         Enrolment Insert(Enrolment enrolment);
         Enrolment Update(Enrolment enrolment);
         Enrolment DeleteById(Guid id);
+        List<Enrolment> GetAllForUser(string userId);
+
     }
 }
