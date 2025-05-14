@@ -10,7 +10,7 @@ using NETCore.MailKit.Core;
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
+//builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 
 // Add services to the container.
@@ -35,6 +35,12 @@ builder.Services.AddTransient<IEnrolmentService, EnrolmentService>();
 builder.Services.AddTransient<ILectureService, LectureService>();
 builder.Services.AddTransient<Courses.Service.Interface.IEmailService, Courses.Service.Implementation.EmailService>();
 builder.Services.AddTransient<ICourseTransferService, CourseTransferService>();
+builder.Services.AddTransient<ITransferRequestService, TransferRequestService>();
+
+
+
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 
 

@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "ContainingType": "Courses.Web.Controllers.Api.AdminController",
+    "Method": "GetAllTransfers",
+    "RelativePath": "api/Admin/GetAllTransfers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Courses.Domain.DomainModels.TransferRequest, Courses.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Courses.Web.Controllers.Api.AdminController",
+    "Method": "GetDetailsForTransfers",
+    "RelativePath": "api/Admin/GetDetailsForTransfers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Courses.Domain.DomainModels.BaseEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Courses.Domain.DomainModels.TransferRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Courses.Web.Controllers.Api.AdminController",
+    "Method": "ImportAllUsers",
+    "RelativePath": "api/Admin/ImportAllUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "System.Collections.Generic.List\u00601[[Courses.Domain.DTO.UserRegistrationDto, Courses.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

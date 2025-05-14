@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CoursesAdminApplication.Models
+{
+    public class CourseTransfer 
+    {
+        public Guid Id { get; set; }
+        public Guid EnrolmendId { get; set; }
+        public virtual Enrolment? Enrolment { get; set; }    
+
+        public Guid TransferRequestId { get; set; }
+        public virtual TransferRequest? TransferRequest { get; set; }
+    }
+}

@@ -12,8 +12,8 @@ namespace Courses.Domain.DomainModels
         public DateTime DateCreated { get; set; }  = DateTime.Now;
 
         public string? CreatedById {  get; set; }
-        public virtual CoursesApplicationUser? CreatedBy { get; set; }
+        public  CoursesApplicationUser? CreatedBy { get; set; }
 
-        public virtual ICollection<CourseTransfer> CourseTransfers { get; set; } = new List<CourseTransfer>();
+        public  ICollection<CourseTransfer> CourseTransfers { get; set; } = new List<CourseTransfer>();
     }
 }

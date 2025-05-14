@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E92A3138-1BF0-4EC9-801D-6A0D34A4CB60}|Courses.Web\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.web\\views\\enrolments\\transferdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E92A3138-1BF0-4EC9-801D-6A0D34A4CB60}|Courses.Web\\Courses.Web.csproj|solutionrelative:courses.web\\views\\enrolments\\transferdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.service\\interface\\itransferrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|solutionrelative:courses.service\\interface\\itransferrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.service\\implementation\\transferrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{166BD294-A25D-4C34-B036-978739A7DCD9}|Courses.Service\\Courses.Service.csproj|solutionrelative:courses.service\\implementation\\transferrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{444627D7-FAE6-4EAE-9E18-A2FF74C629D5}|Courses.Domain\\Courses.Domain.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.domain\\domainmodels\\transferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{444627D7-FAE6-4EAE-9E18-A2FF74C629D5}|Courses.Domain\\Courses.Domain.csproj|solutionrelative:courses.domain\\domainmodels\\transferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{444627D7-FAE6-4EAE-9E18-A2FF74C629D5}|Courses.Domain\\Courses.Domain.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.domain\\domainmodels\\coursetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{444627D7-FAE6-4EAE-9E18-A2FF74C629D5}|Courses.Domain\\Courses.Domain.csproj|solutionrelative:courses.domain\\domainmodels\\coursetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92A3138-1BF0-4EC9-801D-6A0D34A4CB60}|Courses.Web\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92A3138-1BF0-4EC9-801D-6A0D34A4CB60}|Courses.Web\\Courses.Web.csproj|solutionrelative:courses.web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{444627D7-FAE6-4EAE-9E18-A2FF74C629D5}|Courses.Domain\\Courses.Domain.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.domain\\identitymodels\\coursesapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{444627D7-FAE6-4EAE-9E18-A2FF74C629D5}|Courses.Domain\\Courses.Domain.csproj|solutionrelative:courses.domain\\identitymodels\\coursesapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92A3138-1BF0-4EC9-801D-6A0D34A4CB60}|Courses.Web\\Courses.Web.csproj|c:\\users\\elence\\desktop\\is\\coursesapp\\courses.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92A3138-1BF0-4EC9-801D-6A0D34A4CB60}|Courses.Web\\Courses.Web.csproj|solutionrelative:courses.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -28,12 +61,112 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransferDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Web\\Views\\Enrolments\\TransferDetails.cshtml",
+              "RelativeDocumentMoniker": "Courses.Web\\Views\\Enrolments\\TransferDetails.cshtml",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Web\\Views\\Enrolments\\TransferDetails.cshtml",
+              "RelativeToolTip": "Courses.Web\\Views\\Enrolments\\TransferDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T17:30:20.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ITransferRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Interface\\ITransferRequestService.cs",
+              "RelativeDocumentMoniker": "Courses.Service\\Interface\\ITransferRequestService.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Interface\\ITransferRequestService.cs",
+              "RelativeToolTip": "Courses.Service\\Interface\\ITransferRequestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:30:10.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourseTransfer.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Domain\\DomainModels\\CourseTransfer.cs",
+              "RelativeDocumentMoniker": "Courses.Domain\\DomainModels\\CourseTransfer.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Domain\\DomainModels\\CourseTransfer.cs",
+              "RelativeToolTip": "Courses.Domain\\DomainModels\\CourseTransfer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:29:48.301Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransferRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Domain\\DomainModels\\TransferRequest.cs",
+              "RelativeDocumentMoniker": "Courses.Domain\\DomainModels\\TransferRequest.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Domain\\DomainModels\\TransferRequest.cs",
+              "RelativeToolTip": "Courses.Domain\\DomainModels\\TransferRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:07:08.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Web\\Controllers\\Api\\AdminController.cs",
+              "RelativeDocumentMoniker": "Courses.Web\\Controllers\\Api\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Web\\Controllers\\Api\\AdminController.cs",
+              "RelativeToolTip": "Courses.Web\\Controllers\\Api\\AdminController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T16:31:24.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransferRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Implementation\\TransferRequestService.cs",
+              "RelativeDocumentMoniker": "Courses.Service\\Implementation\\TransferRequestService.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Service\\Implementation\\TransferRequestService.cs",
+              "RelativeToolTip": "Courses.Service\\Implementation\\TransferRequestService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T16:12:21.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoursesApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Domain\\IdentityModels\\CoursesApplicationUser.cs",
+              "RelativeDocumentMoniker": "Courses.Domain\\IdentityModels\\CoursesApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Domain\\IdentityModels\\CoursesApplicationUser.cs",
+              "RelativeToolTip": "Courses.Domain\\IdentityModels\\CoursesApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T15:26:26.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Courses.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Elence\\Desktop\\IS\\CoursesApp\\Courses.Web\\Program.cs",
+              "RelativeToolTip": "Courses.Web\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAASwCEAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T11:39:53.039Z",
+              "EditorCaption": ""
             }
           ]
         }
