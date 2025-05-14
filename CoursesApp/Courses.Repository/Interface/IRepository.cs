@@ -12,6 +12,7 @@ namespace Courses.Repository.Interface
     public interface IRepository<T> where T : BaseEntity
     {
         T Insert(T entity);
+        List<T> InsertMany(List<T> entities);
         T Update(T entity);
         T Delete(T entity);
         E? Get<E>(Expression<Func<T, E>> selector,

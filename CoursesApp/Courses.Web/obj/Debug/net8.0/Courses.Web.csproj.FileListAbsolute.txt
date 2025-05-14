@@ -299,3 +299,7 @@ C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Servi
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Repository.pdb
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\Courses.Service.pdb
 C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\obj\Debug\net8.0\Courses.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\MailKit.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\NETCore.MailKit.dll
+C:\Users\Elence\Desktop\IS\CoursesApp\Courses.Web\bin\Debug\net8.0\BouncyCastle.Crypto.dll

@@ -1,3 +1,4 @@
+using Courses.Domain.Email;
 using Courses.Domain.IdentityModels;
 using Courses.Repository;
 using Courses.Repository.Implementation;
@@ -5,8 +6,12 @@ using Courses.Repository.Interface;
 using Courses.Service.Implementation;
 using Courses.Service.Interface;
 using Microsoft.EntityFrameworkCore;
+using NETCore.MailKit.Core;
+
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
@@ -20,11 +25,19 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+
+
 
 builder.Services.AddTransient<ICourseService, CourseService>();
 builder.Services.AddTransient<IStudentService, StudentService>();
 builder.Services.AddTransient<IEnrolmentService, EnrolmentService>();
 builder.Services.AddTransient<ILectureService, LectureService>();
+builder.Services.AddTransient<Courses.Service.Interface.IEmailService, Courses.Service.Implementation.EmailService>();
+builder.Services.AddTransient<ICourseTransferService, CourseTransferService>();
+
+
+
 
 
 

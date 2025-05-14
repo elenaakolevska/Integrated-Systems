@@ -59,3 +59,14 @@
 <form asp-action="Transfer" method="post">
 	<button type="submit" class="btn btn-primary">Transfer</button>
 </form>
+
+<form asp-controller="CourseTransfer" asp-action="TransferNow" method="post">
+    @* можеш да ги вметнеш enrolmentIds како hidden inputs *@
+    @foreach (var enrolment in Model)
+    {
+        <input type="hidden" name="enrolmentIds" value="@enrolment.Id" />
+    }
+
+    <button type="submit" class="btn btn-success">Transfer now</button>
+</form>
+
